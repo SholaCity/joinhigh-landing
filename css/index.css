@@ -1,0 +1,1123 @@
+/* header */
+
+#head-wrapper {
+    width: var(--actual-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#head-wrapper .profile-text {
+    flex-basis: 50%;
+    color: var(--clr-primary);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.profile-text p:nth-child(1) {
+    color: var(--clr-secondary);
+}
+
+.profile-text h1 {
+    color: var(--clr-secondary);
+    font-size: 4.3rem;
+}
+
+
+.profile-text p {
+    width: 80%;
+    line-height: 1.8;
+}
+
+.btn-wrap {
+    display: flex;
+    width: 100%;
+    margin-top: 0.9rem;
+    column-gap: 1rem;
+}
+
+a.header-btn:nth-child(1) {
+    background-color: var(--bg-tertiary);
+    color: var(--clr-secondary);
+}
+
+a.header-btn:nth-child(2) {
+    background-color: var(--white);
+    border: var(--b-wit) solid var(--bg-tertiary);
+
+}
+
+.btn {
+    width: fit-content;
+    font-weight: 500;
+    color: var(--clr-secondary);
+    margin-right: 0.625rem;
+    border-radius: var(--b-radRound);
+    padding: 0.625rem 1.25rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+a.header-btn span {
+    height: 3.125rem;
+    width: 3.125rem;
+    background-color: var(--bg-primary);
+    border-radius: var(--b-radRound);
+    margin-left: 0.625rem;
+}
+
+.available {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 1rem;
+    border: 1px solid whitesmoke;
+    border-radius: var(--b-radSoft);
+    padding: 0.8rem;
+    row-gap: 1rem;
+}
+
+.available .item {
+    flex-basis: 50%;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+}
+
+.available .item .img {
+    height: 4.375rem;
+    width: 4.375rem;
+    margin-right: 0.625rem;
+    border-radius: var(--b-radRound);
+    background-color: var(--bg-primary);
+}
+
+.available .item .text {
+    width: 70%;
+}
+
+.available .item .text .font500 {
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+/*  */
+#head-wrapper .podcasts-wrap {
+    flex-basis: 45%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.podcasts-wrap .container {
+    display: flex;
+    width: 15.625rem;
+    flex-flow: column nowrap;
+    margin-right: 0.5rem;
+    justify-content: flex-end;
+}
+
+.podcasts-wrap .container.alt {
+    flex-flow: column-reverse nowrap;
+    margin-top: -6.5rem;
+    margin-left: 1rem;
+
+}
+
+.podcasts-wrap .container .play {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+
+    padding: 1.8rem;
+    width: 100%;
+    height: 15.625rem;
+    border-radius: 5rem 4rem 3.7rem;
+    background: var(--bg-gradient);
+}
+
+.container .play div.span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.play div span {
+    height: 3.125rem;
+    width: 3.125rem;
+    background-color: var(--bg-primary);
+    border-radius: var(--b-radRound);
+}
+
+.play p {
+    color: var(--white);
+}
+
+
+
+.container .play .progress {
+    width: 90%;
+    margin-inline: auto;
+    height: 0.8rem;
+    border-radius: var(--b-radRound);
+    background-color: var(--bg-primary);
+}
+
+.play .progress .bar {
+    width: 40%;
+    height: 100%;
+    background-color: var(--clr-secondary);
+    border-radius: var(--b-radRound);
+}
+
+.play .progress .bar:hover {
+    width: 100%;
+}
+
+.container .img {
+    background: var(--bg-tertiary);
+    height: 28.125rem;
+    width: 100%;
+    border-radius: var(--b-radRound);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container .img.one {
+    background-image: url("../assets/blob3.jpg");
+    margin-top: 2rem;
+}
+
+.container.alt .img.two {
+    background-image: url("../assets/blob6.jpg");
+    margin-bottom: 2rem;
+}
+
+/* cards */
+.podcast-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.podcast-head .sub-head {
+    font-size: 4rem;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+}
+
+.podcast-head .sub-head .line {
+    height: 5px;
+    width: 150px;
+    background-color: var(--bg-secondary);
+
+}
+
+.podcast-head .sub-head~p {
+    width: min(90%, 380px);
+}
+
+.card-wrap {
+    display: flex;
+    column-gap: 5%;
+    justify-content: space-between;
+    margin-top: 4.5rem;
+}
+
+.card-wrap .card-podcast {
+    flex-basis: 50%;
+    height: 400px;
+    padding: 2.5rem;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    row-gap: 15px;
+    position: relative;
+}
+
+.card-wrap .card-podcast:nth-child(3) {
+    display: none;
+}
+
+.card-wrap .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    min-height: 50px;
+    border-radius: var(--b-radRound);
+    background: var(--bg-gradient);
+    box-shadow: 0 0 0 7px var(--bg-tertiary);
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+.card-wrap .card-podcast .font500 {
+    font-size: 2rem;
+    width: 65%;
+}
+
+.card-wrap .card-podcast .sm-font {
+    width: 65%;
+}
+
+.card-wrap .card-podcast .btn.font500 {
+    width: fit-content;
+    font-size: 1.5rem;
+    background: var(--bg-tertiary);
+}
+
+.card-wrap .card-podcast .img {
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+    border-radius: var(--b-radRound) var(--b-radRound) 0 0;
+    height: 130px;
+    width: 100px;
+    background: var(--bg-primary);
+}
+
+.card-wrap .card-podcast .img.one {
+    right: 3%;
+    top: 20%;
+    border-radius: var(--b-radRound);
+
+}
+
+.card-wrap .card-podcast .img.two {
+    right: 25%;
+}
+
+/* ======== */
+#howItWorks {
+    background-color: whitesmoke;
+}
+
+#howItWorks .head {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+}
+
+#howItWorks .head .font500 {
+    font-size: 2.9rem;
+}
+
+#howItWorks .head .font500 span {
+    font-size: inherit;
+}
+
+#howItWorks .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+#howItWorks .container .item {
+    flex-basis: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    row-gap: 10px;
+    padding: 1.9rem 2.3rem;
+    border-radius: var(--b-radSoft);
+    background-color: var(--white);
+}
+
+#howItWorks .container .item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    min-height: 50px;
+    border-radius: var(--b-radRound);
+    background: var(--bg-gradient);
+    box-shadow: 0 0 0 7px var(--bg-primary);
+    color: var(--white);
+    font-size: 1.8rem;
+}
+
+#howItWorks .container .item .font500 {
+    font-size: 1.9rem;
+}
+
+/*  */
+#WMUD {
+    width: var(--actual-width);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+}
+
+#WMUD>.WMUD-text {
+    width: 45%;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10px;
+}
+
+#WMUD .WMUD-text h3.font500 {
+    font-size: 2.8rem;
+}
+
+#WMUD .WMUD-text p i span,
+#WMUD .WMUD-text p i {
+    font-size: 1.2rem;
+}
+
+#WMUD .WMUD-text ul {
+    margin-top: 10px;
+}
+
+#WMUD .WMUD-text ul li {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+#WMUD .WMUD-text ul li span.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: var(--b-radRound);
+    background: var(--bg-gradient);
+
+}
+
+#WMUD .WMUD-text ul li.font500 {
+    font-size: 1.4rem;
+    list-style: disc;
+}
+
+#WMUD .content-wrap {
+    width: 40%;
+    height: 430px;
+    background: var(--bg-gradient);
+    border-radius: 50% 70px 40% 40%;
+    position: relative;
+    margin: auto;
+}
+
+#WMUD .content-wrap .available {
+    background-color: var(--white);
+    position: absolute;
+    width: max(400px, 80%);
+    left: -25%;
+    top: -5%;
+}
+
+
+.content-wrap .available .text {
+    width: fit-content;
+}
+
+.content-wrap .available .text p {
+    font-size: 0.9rem;
+}
+
+
+
+
+.content-wrap .available .text .font500 {
+    font-size: 1rem;
+}
+
+.content-wrap .available .text .sm-font {
+    font-size: 0.8rem;
+}
+
+.content-wrap .podcast-filter {
+    background-color: var(--white);
+    position: absolute;
+    border-radius: var(--b-radSoft);
+    padding: 0.8rem;
+    width: max(400px, 70%);
+    right: -20%;
+    bottom: -5%;
+    border: 1px solid whitesmoke;
+}
+
+.content-wrap .podcast-filter h4.font500 {
+    font-size: 1.4rem;
+}
+
+.content-wrap .podcast-filter .container {
+    display: flex;
+    flex-flow: column-reverse nowrap;
+
+}
+
+.podcast-filter .container .row {
+    width: 100%;
+    max-height: 100px;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    display: none;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+    margin: 20px 0
+}
+
+.podcast-filter .container .row .podcast {
+    scroll-snap-align: start;
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.podcast-filter .container .row .podcast .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--b-radRound);
+    background: var(--bg-gradient);
+    color: var(--white);
+    font-size: 0.9rem;
+}
+
+.podcast-filter .container .row .podcast .text p {
+    font-size: 0.9rem;
+}
+
+.podcast-filter .container .row .podcast .text p:nth-child(1) {
+    color: var(--black);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/*  */
+
+
+.podcast-filter .container .row.active-page {
+    visibility: visible;
+    display: flex;
+    opacity: 1;
+}
+
+.row.active-page ul li a {
+    transform: rotate3d(0, 0, 0, 0deg);
+    animation: fadeIn 600ms ease 100ms 1 both alternate;
+}
+
+
+/* podcast page btn */
+.pages {
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pages div {
+    color: var(--clr-primary);
+    text-align: center;
+    margin: 2%;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+#row-one.active-page~.pages div.one,
+#row-two.active-page~.pages div.two,
+#row-three.active-page~.pages div.three,
+#row-four.active-page~.pages div.four {
+    color: var(--black);
+}
+
+/*  */
+#reviews {
+    width: 100vw;
+    background: linear-gradient(180deg, var(--white) 50%, var(--bg-secondary) 50%);
+    padding: 50px 10px;
+    margin: 0 auto;
+}
+
+#reviews .podcast-head {
+    align-items: center;
+}
+
+#reviews .podcast-head h3 {
+    font-size: 2.8rem;
+    width: 400px;
+}
+
+#reviews .podcast-head .btn {
+    height: fit-content;
+    border-color: var(--bg-secondary);
+}
+
+#reviews .review.card-wrap {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    height: 550px;
+}
+
+.review-item {
+    width: min(450px, 90%);
+    left: auto;
+    scale: 0.9;
+    visibility: hidden;
+    padding: 20px;
+    border-radius: calc(20px + var(--b-radSoft));
+    border: 3px solid var(--clr-tertiary);
+    opacity: 0;
+    background-color: var(--white);
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 15px;
+    position: absolute;
+    transition: all 500ms ease;
+}
+
+.active-review {
+    visibility: visible;
+    opacity: 1;
+    scale: 1.3;
+    z-index: 9999;
+}
+
+.review.card-wrap .review-item .logo-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-item .logo-wrap div.line {
+    width: 70%;
+    height: 5px;
+    background: var(--bg-primary);
+    border-radius: var(--b-radSoft);
+}
+
+#reviews .review.card-wrap .review-item .rev-profile {
+    display: flex;
+    align-items: center;
+}
+
+#reviews .review.card-wrap .review-item .rev-profile .img {
+    width: 45px;
+    height: 45px;
+    background-image: url("../assets/image-thomas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--b-radRound);
+    margin-right: 20px;
+}
+
+
+
+/* review btn */
+.review-radio {
+    width: var(--actual-width);
+    margin-inline: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 3%;
+    column-gap: 3%;
+}
+
+.review-radio li {
+    color: var(--clr-primary);
+    text-align: center;
+    margin: 2%;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    background-color: var(--white);
+    border-radius: var(--b-radRound);
+    opacity: 0.5;
+    box-shadow: 0 0 0 8px var(--clr-secondary), 0 0 0 var(--white);
+}
+
+[data-target="rev-one"].active-review~.review-radio li.one,
+[data-target="rev-two"].active-review~.review-radio li.two,
+[data-target="rev-three"].active-review~.review-radio li.three,
+[data-target="rev-four"].active-review~.review-radio li.four,
+[data-target="rev-five"].active-review~.review-radio li.five {
+    opacity: 1;
+    box-shadow: 0 0 0 8px var(--clr-secondary), 0 0 0 10px var(--white);
+
+}
+
+/* media media queries */
+@media (max-width:1300px) {
+
+    /* hero header */
+    #head-wrapper .profile-text {
+        flex-basis: 55%;
+    }
+
+    .profile-text h1 {
+        font-size: 3.925rem;
+    }
+
+
+    .profile-text p {
+        width: 90%;
+    }
+
+    .btn {
+        padding: 0.525rem 1.1rem;
+        font-size: 1.3rem;
+    }
+
+    .available .item .img {
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+
+    .available .item .text {
+        flex-basis: 100%;
+    }
+
+    /*  */
+    #head-wrapper .podcasts-wrap {
+        flex-basis: 40%;
+    }
+
+    .podcasts-wrap .container {
+        width: 14.375rem;
+        margin-right: 0.5rem;
+        justify-content: flex-start;
+    }
+
+    .podcasts-wrap .container.alt {
+        justify-content: flex-end;
+        margin-top: -5.5rem;
+        margin-left: 0.8rem;
+    }
+
+    .podcasts-wrap .container .play {
+        height: 14.375rem;
+        padding: 1.2rem;
+    }
+
+
+    .play div span {
+        height: 3rem;
+        width: 3rem;
+    }
+
+    .container .img {
+        height: 23.75rem;
+        /*  height: 380px*/
+    }
+
+    /* ======== */
+
+    #WMUD>.WMUD-text {
+        width: 45%;
+    }
+
+    #WMUD .content-wrap {
+        height: 400px;
+        border-radius: 20px;
+
+    }
+
+    #WMUD .content-wrap .available {
+        left: -15%;
+        top: 2%;
+    }
+
+
+
+    .content-wrap .podcast-filter {
+        right: -10%;
+        bottom: -10%;
+    }
+
+
+
+
+
+    /* ====== */
+}
+
+@media (max-width: 1145px) {
+
+
+    /* hero header */
+
+
+    #head-wrapper .profile-text {
+        flex-basis: 50%;
+    }
+
+    .profile-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .podcasts-wrap .container {
+        width: 13.125rem;
+        margin-right: 0.5rem;
+    }
+
+    .available {
+        width: 100%;
+        padding: 0.86rem;
+        row-gap: 0.8rem;
+    }
+
+    .available .item .text {
+        width: 100%;
+    }
+
+    /*  */
+    .podcasts-wrap .container .play {
+        height: 13.125rem;
+        padding: 0.8rem;
+        border-radius: 30px 20% 20%;
+    }
+
+    .container .img {
+        width: 13.125rem;
+        height: 21.75rem;
+    }
+
+
+    /* ========= */
+
+
+    /* cards */
+
+    .podcast-head .sub-head {
+        font-size: 3.8rem;
+    }
+
+    .card-wrap .card-podcast {
+        row-gap: 10px;
+    }
+
+
+    .card-wrap .card-podcast .font500 {
+        font-size: 1.8rem;
+        width: 80%;
+    }
+
+    .card-wrap .card-podcast .sm-font {
+        width: 70%;
+    }
+
+    .card-wrap .card-podcast .btn.font500 {
+        padding: 0.5rem 0.8rem;
+        font-size: 1.3rem;
+    }
+
+    .card-wrap .card-podcast .img {
+        height: 120px;
+        width: 90px;
+    }
+
+    /* ===== */
+
+}
+
+
+@media (max-width:996px) {
+
+    * {
+
+        font-size: 14.5px;
+    }
+
+    .podcast-head .sub-head {
+        font-size: 3.2rem;
+    }
+
+    .card-wrap {
+        width: 100%;
+        overflow-y: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .card-wrap .card-podcast {
+        min-width: 60%;
+        scroll-snap-align: start;
+        height: 350px;
+    }
+
+    .card-wrap .card-podcast:nth-child(3) {
+        display: flex;
+    }
+
+    /* ======= */
+
+    #howItWorks .container .item {
+        flex-basis: 32%;
+        padding: 1.4rem 1.8rem;
+        row-gap: 5px;
+    }
+
+    /* ======= */
+
+    #WMUD .content-wrap {
+        width: 45%;
+        height: 300px;
+    }
+
+    #WMUD .content-wrap .available {
+        left: 0%;
+        top: -20%;
+    }
+
+
+
+    .content-wrap .podcast-filter {
+        width: max(400px, 75%);
+        right: 12.5%;
+        bottom: -20%;
+    }
+}
+
+@media (max-width:868px) {
+    #head-wrapper .profile-text {
+        flex-basis: 100%;
+    }
+
+
+
+    .available {
+        width: 100%;
+        padding: 0.86rem;
+        row-gap: 0.8rem;
+    }
+
+    .available .item .text {
+        width: 100%;
+    }
+
+    #head-wrapper .podcasts-wrap {
+        flex-basis: 100%;
+        margin-top: 1.2rem;
+    }
+
+    .podcasts-wrap .container {
+        width: 50%;
+        flex-flow: row nowrap;
+        gap: 0.625rem;
+        justify-content: space-around;
+    }
+
+    .podcasts-wrap .container.alt {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .podcasts-wrap .container .play {
+        width: 13.125rem;
+        height: 13.125rem;
+        padding: 0.8rem;
+    }
+
+    .container .img {
+        width: 12.125rem;
+        height: 19.75rem;
+    }
+
+    .container .img.one {
+        margin-top: 0;
+    }
+
+    /* ======= */
+
+    .podcast-head {
+        flex-flow: column nowrap;
+    }
+
+    .podcast-head .sub-head {
+        margin-bottom: 25px;
+    }
+
+    .podcast-head .sub-head~p {
+        align-self: flex-end;
+    }
+
+    .card-wrap .card-podcast {
+        min-width: 95%;
+        scroll-snap-align: center;
+        margin: 0 5%;
+        padding: 0.5rem;
+    }
+
+    /* ===== */
+    #howItWorks .head .font500 {
+        font-size: 2.5rem;
+        padding: 0 5%;
+        width: 100%;
+    }
+
+    #howItWorks .container {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    #howItWorks .container .item {
+        flex-basis: min(90%, 500px);
+        padding: 2.5rem;
+    }
+
+    .active-review {
+        scale: 1.1;
+    }
+}
+
+/*  */
+
+
+
+/**/
+
+/**/
+
+@media (max-width: 800px) {
+
+    .profile-text h1 {
+        font-size: 2.8rem;
+    }
+
+    #head-wrapper .podcasts-wrap {
+        flex-flow: row wrap;
+    }
+
+    .podcasts-wrap .container {
+        flex-basis: 100%;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.625rem;
+        margin: 0;
+
+    }
+
+    .podcasts-wrap .container.alt {
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+
+    }
+
+    /* ======= */
+
+    #WMUD {
+        flex-wrap: wrap;
+        row-gap: 100px;
+    }
+
+    #WMUD>.WMUD-text {
+        width: 80%;
+    }
+
+    #WMUD .content-wrap {
+        width: min(600px, 100%);
+        margin-inline: auto;
+        height: 350px;
+    }
+
+    #WMUD .content-wrap .available {
+        left: 5%;
+        top: -10%;
+    }
+
+
+
+    .content-wrap .podcast-filter {
+        width: max(400px, 60%);
+        right: 12.5%;
+        bottom: -10%;
+    }
+
+}
+
+@media (max-width: 568px) {
+    .btn-wrap {
+        flex-flow: column nowrap;
+        /* align-items: center; */
+        row-gap: 1rem;
+    }
+
+    a.header-btn {
+        width: 65%;
+        justify-content: center;
+    }
+
+
+    .podcast-head .sub-head {
+        font-size: 2.8rem;
+    }
+
+    .podcast-head .sub-head .line {
+        display: none;
+    }
+
+    /* ====== */
+
+
+
+    .card-wrap .card-podcast .font500 {
+        width: 90%;
+    }
+
+    .card-wrap .card-podcast .sm-font {
+        width: 90%;
+    }
+
+
+
+    .card-wrap .card-podcast .img {
+        height: 80px;
+        width: 60px;
+    }
+
+    /* ===== */
+
+
+
+    #WMUD>.WMUD-text {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    #WMUD .WMUD-text h3.font500 {
+        font-size: 2.3rem;
+    }
+
+    #WMUD .content-wrap .available {
+        width: min(400px, 95%);
+        left: 2.5%;
+        top: -10%;
+    }
+
+    .content-wrap .podcast-filter {
+        width: min(400px, 90%);
+        right: 5%;
+        bottom: -10%;
+    }
+
+}
